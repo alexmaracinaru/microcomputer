@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    padding: 0px 150px;
+}
+
+@media only screen and (max width: 599px) {
+    display: grid;
+    grid-template-columns:100%;
+    padding: 0px 20px
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    background-color: white;
+    grid-column: span 3;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none
+}
+
+header li {
+    margin-right: 50px
+}
+
+header a {
+    color: #434343;
+    text-decoration: none;
+    font-family: lato;
+
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 30px;
+
+}
+
+.stage {
+    font-family: lato;
+    font-style: normal;
+    font-size: 1em;
+    color: #434343
+}
+
+.stage a {
+    text-decoration: none;
+    color: #434343;
+    font-weight: bold;
+}
+
+.section1 {
+    grid-column: span 3;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color: #434343;
+    border-radius: 50%;
+}
+
+.section2 {
+    grid-column: span 3;
+}
+
+footer {}
+
+h1 {
+    font-size: 1.5em;
+    font-family: lato, sans-serif;
+    font-weight: bold;
+    color: #20639B;
+}
+
+inlinequote {
+    font-family: futura monospace;
+    font-style: italic;
+    font-weight: lighter
+}
+
+h2 {
+    font-size: 1.2em;
+    font-family: lato, sans-serif;
+    font-weight: bold;
+    color: #20639B;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-family: lato, sans-serif;
+    font-weight: bold;
+    color: #20639B;
+}
+
+p {
+    font-size: 1em;
+    font-family: futura monospace, sans-serif;
+    font-weight: lighter;
+}
+
+footer {
+    font-size: 1em;
+    font-family: futura, sans-serif;
+    font-weight: normal
+}
